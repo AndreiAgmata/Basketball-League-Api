@@ -96,7 +96,7 @@ module.exports = class BasketballDB {
   }
 
   updateTeamById(data, id) {
-    return this.Team.updateOne({ _id: id }, { $set: data }).exec();
+    return this.Team.updateOne({ teamName: id }, { $set: data }).exec();
   }
 
   deleteTeamById(id) {
