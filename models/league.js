@@ -100,6 +100,6 @@ module.exports = class BasketballDB {
   }
 
   deleteTeamById(id) {
-    return this.Team.deleteOne({ teamName: id }).exec();
+    return this.Team.deleteOne({ _id: id }).exec();
   }
 };
